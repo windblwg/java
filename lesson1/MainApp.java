@@ -55,7 +55,7 @@ public class MainApp {
         System.out.println("2. checkSumSign ");
         System.out.println("3. printColor ");
         System.out.println("4. compareNumbers");
-        System.out.println("Чтоб выйти нажми любую другую цифру");
+        System.out.println("Чтоб выйти нажми любую другую клаавишу");
         c = getChar("какой метод хотим проверить?:");
         if (c == '1') {
             printThreeWords();
