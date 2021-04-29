@@ -38,7 +38,7 @@ public class lesson2 {
     }
 
     public static boolean isPositiveOrNegativeBoolean(int i) {
-        return (i>=0);
+        return (i<0);
         }
 
     public static void printNStrings(String s, int j) {
