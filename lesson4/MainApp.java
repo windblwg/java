@@ -107,11 +107,14 @@ public class MainApp {
         int countR=0,countC=0,countD1=0,countD2=0;
         System.out.println("symb " + symb);
 
-        for (i = 0; i<SIZE ; i++)
-            if (map[i][0] == symb) countR++;
-
-        for (i = 0; i<SIZE ; i++)
-            if (map[0][i] == symb) countC++;
+        for (j=1; j<SIZE; j++) {
+            for (i = 0; i < SIZE; i++)
+                if (map[i][j] == symb) countR++;
+        }
+        for (j=1; j<SIZE; j++) {
+            for (i = 0; i < SIZE; i++)
+                if (map[j][i] == symb) countC++;
+        }
 
         for (i = 0; i<SIZE ; i++)
             if (map[i][i] == symb) countD1++;
