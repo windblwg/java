@@ -25,7 +25,7 @@ public class Cat {
             System.out.println(" Кот " + name + " сыт");
         }
         else {
-            System.out.println(" Кот " + name + " всё ещё голоден. Добавьте еды в миску");
+            System.out.println("Коту " + name + " мало еды. Добавьте еды в миску");
         }
     }
 
