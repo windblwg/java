@@ -30,11 +30,7 @@ public class Plate {
     }
 
     public boolean descFood(int d){
-        if (food == 0) {
-            System.out.println(" Коту еды не досталось");
-            return false;
-        }
-        else if (food < d) return false;
+        if (food == 0 || food < d)  return false;
         else  food -= d;
         return true;
     }
