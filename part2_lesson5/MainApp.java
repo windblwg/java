@@ -93,10 +93,17 @@ public class MainApp {
         aThread.start();
         bThread.start();
 
-       printSpeed(" Обработка в 2 потока :");
+        printSpeed(" Обработка в 2 потока :");
 
         System.arraycopy(a, 0, arr, 0, h);
         System.arraycopy(b, 0, arr, a.length, b.length);
+        
+        try {
+            aThread.join();
+            bThread.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
         printSpeed(" Склейка в 2 потока :");
     }
